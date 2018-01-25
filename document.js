@@ -7,14 +7,8 @@ var capital;
 var interes;
 var dataInici;
 var termini;
-//Bucle per el termini
 
-for (i=0; i<termini.length; i++)
-
-{
-
-
-//Fórmula
+//if (termini)
 
 var resultat=((capital*interes) / 100 *(1-Math.pow((1+(interes/100)/12),(-termini))));
 
@@ -25,4 +19,4 @@ var resultat=((capital*interes) / 100 *(1-Math.pow((1+(interes/100)/12),(-termin
 document.getElementById("pagamentMensual").innerHTML=resultat;
 
 }
-}
+
