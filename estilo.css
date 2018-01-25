@@ -1,9 +1,25 @@
+
 h2{
-    background-color: #B4E9F5;
-    color: #939796;
+    background-color: rgba(233, 236, 235, 0.801);
+    color: #4e504f;
     text-align: center;
 }
 body {
-    background-color:#D4F3FA;
-    color:#939796; 
+	background-image: url("img/fondo.jpg");
+	background-attachment: scroll;
+}
+form {
+    text-align: center; 
+    background-color:  rgba(233, 236, 235, 0.801);
+    float: right;
+    color: #4e504f;
+    padding: 5%;
+}
+
+input {
+    text-align: center;
+}
+.copyrihgt
+{
+	background-color:rgba(233, 236, 235, 0.801);
 }
