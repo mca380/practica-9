@@ -6,7 +6,8 @@ h2{
 }
 body {
 	background-image: url("img/fondo.jpg");
-	background-attachment: scroll;
+    background-attachment: scroll;
+    
 }
 form {
     text-align: center; 
@@ -14,6 +15,7 @@ form {
     float: right;
     color: #4e504f;
     padding: 5%;
+    opacity: 0.9;
 }
 
 #resultat {
@@ -22,6 +24,8 @@ form {
     float: none;
     color: #4e504f;
     padding: 5%;
+    opacity: 0.9;
+    font-weight: bold;
 }
 
 input {

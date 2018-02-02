@@ -33,11 +33,12 @@ function calcularPagament() {
         pagament = (capital*interessos) / (100 *(1-Math.pow(1+(interessos/100),-termini)));
       
         
-        resultat = ("L'import a pagar és de "+(Math.round(pagament * 100) / 100)+" € al mes. Acabaràs de pagar dia "+datatFi.toLocaleDateString("en-US"));
-        document.getElementById("resultat").innerHTML
+        resultat = "L'import a pagar és de "+(Math.round(pagament * 100) / 100)+" € al mes. Acabaràs de pagar dia "+datatFi.toLocaleDateString("en-US");
+        document.getElementById("resultat").innerHTML = resultat;
     }else{
         
     }
+    return false;
 }
 
 
