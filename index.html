@@ -7,12 +7,16 @@
     <title>MarinaCánovas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <script src = "document.js"></script>
 </head>
 <body>
         <div class="container">
                 <h2>CALCULA LA TEVA HIPOTECA</h2>
                 <br><br>
-                <form>
+                <div id="resultat">
+                    <b>RESULTAT:</b>
+                </div>
+                <form  action="#" onsubmit="return calcularPagament()">
                     <h4>Introdueix les següents dades:</h4>
                     <br>
                     <label for="">DATA D'INICI:</label>
@@ -25,31 +29,18 @@
                     <br><br>
                     <label for = "">INTERESSOS:</label>
                     <br>
-                    <input type = "number" id = "interes">
-                    <br><br>
+                    <input type = "text" id = "interessos" >
+                    <br><br> 
                     <label for = "">TERMINI:</label>
                     <br>
-                    <input type = "month" id = "termini">
+                    <input type = "number" id = "termini" max= "40">
+                    <br><br> 
+                    <button type="submit" class="btn btn-info-outline">Som-hi!</Som-hi!></button>
                     <br><br>
-                    <input type="button" class="btn btn-info-outline" onclick="resultat();" value="Som-hi!">
-                    <br><br>
-                    <input type="butonn" class="btn btn-danger-outline " onclick="Eliminar();" value="Eliminar">
                     <br><br>
                 </form>
-                
-                <div>
-                        <div id="pagamentMensual"></div>
-                </div>
-
-                <table id="taulaMultiplicar" class="table table-striped table-inverse">
-                    <thead>
-                        <tr> 
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
             </div>
+            <br><br>
             <div class="copyrihgt">Copyrihgt &copy;MarinaCánovas. Calculadora_Hipoteca</div>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

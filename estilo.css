@@ -16,6 +16,14 @@ form {
     padding: 5%;
 }
 
+#resultat {
+    text-align: center; 
+    background-color:  rgba(233, 236, 235, 0.801);
+    float: none;
+    color: #4e504f;
+    padding: 5%;
+}
+
 input {
     text-align: center;
 }
