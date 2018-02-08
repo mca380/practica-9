@@ -10,9 +10,9 @@ function calcularData(){
         return true;
     }
 }
-function calcularPagament() {
-    if (calcularData()) {
-        
+
+function calcularPagament() { //Aquesta funció és la més important ja què ens donarà el resultat dels càlculs.
+    if (calcularData()) {         
         var pagament = 0;
         var capital = document.getElementById("capital").value;
         var interessos = parseFloat(document.getElementById("interessos").value); 
@@ -31,15 +31,13 @@ function calcularPagament() {
         interessos = interessos/12;
         termini = termini*12;
         pagament = (capital*interessos) / (100 *(1-Math.pow(1+(interessos/100),-termini)));
-      
         
-        resultat = "L'import a pagar és de "+(Math.round(pagament * 100) / 100)+" € al mes. Acabaràs de pagar dia "+datatFi.toLocaleDateString("en-US");
-        document.getElementById("resultat").innerHTML = resultat;
-    }else{
+        alert ("L'import a pagar és de "+(Math.round(pagament * 100) / 100)+" € al mes. Acabaràs de pagar dia "+datatFi.toLocaleDateString("en-US"));
+        //posam el ToLocaleDateString per a poder controlar i ajustar la data que introdueix l'usuari.
+        
+    } else {
         
     }
-    return false;
+    
 }
-
-
 

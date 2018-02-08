@@ -18,16 +18,6 @@ form {
     opacity: 0.9;
 }
 
-#resultat {
-    text-align: center; 
-    background-color:  rgba(233, 236, 235, 0.801);
-    float: none;
-    color: #4e504f;
-    padding: 5%;
-    opacity: 0.9;
-    font-weight: bold;
-}
-
 input {
     text-align: center;
 }

@@ -10,41 +10,43 @@
     <script src = "document.js"></script>
 </head>
 <body>
-        <div class="container">
-                <h2>CALCULA LA TEVA HIPOTECA</h2>
-                <br><br>
-                <div id="resultat">
-                </div>
-                <br><br>
-                <form  action="#" onsubmit="return calcularPagament()">
-                    <h4>Introdueix les següents dades:</h4>
-                    <br>
-                    <label for="">DATA D'INICI:</label>
-                    <br>
-                    <input type="date" id="dataInici">
-                    <br><br>
-                    <label for = "">CAPITAL:</label>
-                    <br>
-                    <input type = "number" min ="0" max = "1000000" id= "capital">
-                    <br><br>
-                    <label for = "">INTERESSOS:</label>
-                    <br>
-                    <input type = "text" id = "interessos" >
-                    <br><br> 
-                    <label for = "">TERMINI:</label>
-                    <br>
-                    <input type = "number" id = "termini" max= "40">
-                    <br><br> 
-                    <button type="submit" class="btn btn-info-outline">Som-hi!</Som-hi!></button>
-                    <br><br>
-                    <br><br>
-                </form>
-            </div>
+    <div class="container">
+        <h2>CALCULA LA TEVA HIPOTECA</h2>
+        <br><br>
+        <div id="resultat">
+        </div>
+        <br><br>
+        <!--L'acció '#' és molt important per a retornar el resultat del formulari-->
+        <form  action="#" onsubmit="return calcularPagament()">
+            <h4>Introdueix les següents dades:</h4>
+            <br>
+            <label for="">DATA D'INICI:</label>
+            <br>
+            <input type="date" id="dataInici">
             <br><br>
-            <div class="copyrihgt">Copyrihgt &copy;MarinaCánovas. Calculadora_Hipoteca</div>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-            <script type="text/javascript"></script>  
+            <label for = "">CAPITAL:</label>
+            <br>
+            <input type = "number" min ="0" max = "1000000" id= "capital">
+            <br><br>
+            <label for = "">INTERESSOS:</label>
+            <br>
+            <input type = "text" id = "interessos" >
+            <br><br> 
+            <label for = "">TERMINI:</label>
+            <br>
+            <input type = "number" id = "termini" max= "40" placeholder="En anys (ex:20)">
+            <!--Posam el paceholder perque l'usuari introdueixi el termini en anys i no en mesos-->
+            <br><br>
+            <br><br>
+            <button type="submit" class="btn btn-info-outline">Som-hi!</button>
+            <br><br>
+        </form>
+    </div>
+    <br><br>
+    <div class="copyrihgt">Copyrihgt &copy;MarinaCánovas. Calculadora_Hipoteca</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>  
 </body>
 </html>
